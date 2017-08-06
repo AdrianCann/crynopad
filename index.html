@@ -1,25 +1,30 @@
+<!DOCTYPE html>
 <html>
   <head>
     <link rel="stylesheet" type="text/css" href="main.css" />
+    <title>Crypnopad</title>
   </head>
   <body>
+    <h1>Cryptographic Notepad</h1>
     <form action="" id="new_note">
-      <textarea id="note_message" placeholder="Encrypred Message"></textarea>
-      <input id="note_password" type="password" placeholder="Password">
+      <h3>Encrypt a note:</h3>
       <input id="note_name" type="text" placeholder="Note name">
+      <textarea id="note_message" placeholder="Encrypted Message"></textarea>
+      <input id="note_password" type="password" placeholder="Password">
       <button>Encrypt</button>
     </form>
 
-    <div id="encrypted_output">
+    <div id="encrypted_output" class="output hidden">
     </div>
 
     <form action="" id="encrypted_note">
+      <h3>Retrieve a note you have saved:</h3>
+      <input id="encrypted_note_name" type="text" placeholder="Name">
       <input id="encrypted_note_password" type="password" placeholder="Password">
-      <input id="encrypted_note_name", type="text" placeholder="Name">
       <button>Decrypt</button>
     </form>
 
-    <div id="decrypted_output">
+    <div id="decrypted_output" class="output hidden">
     </div>
 
     <script src="sjcl.js" type="text/javascript"></script>
