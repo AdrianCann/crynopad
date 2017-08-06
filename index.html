@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="main.css" />
+  </head>
+  <body>
+    <form action="" id="new_note">
+      <textarea id="note_message" placeholder="Encrypred Message"></textarea>
+      <input id="note_password" type="password" placeholder="Password">
+      <input id="note_name" type="text" placeholder="Note name">
+      <button>Encrypt</button>
+    </form>
+
+    <div id="encrypted_output">
+    </div>
+
+    <form action="" id="encrypted_note">
+      <input id="encrypted_note_password" type="password" placeholder="Password">
+      <input id="encrypted_note_name", type="text" placeholder="Name">
+      <button>Decrypt</button>
+    </form>
+
+    <div id="decrypted_output">
+    </div>
+
+    <script src="sjcl.js" type="text/javascript"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
