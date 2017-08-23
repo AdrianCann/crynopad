@@ -1,7 +1,7 @@
 * {
   box-sizing: border-box;
-  font-size: 14px;
   border-radius: 3px;
+  font-size: 20px;
 }
 
 button {
@@ -17,8 +17,8 @@ button {
 
 body {
   background: #1499c9;
-  width: 550px;
-  margin: 20px auto;
+  width: 100%;
+  margin: 3px auto;
 }
 
 form {
@@ -32,8 +32,8 @@ button,
 h3 {
   display: block;
   margin: 10px auto;
-  padding: 5px;
-  width: 500px;
+  padding: 10px;
+  width: 100%;
 }
 
 textarea {
@@ -48,14 +48,12 @@ textarea {
 h1 {
   color: white;
   font-family: monospace;
-  font-size: 30px;
   text-align: center;
 }
 
 h3 {
   color: white;
   font-family: monospace;
-  font-size: 20px;
 }
 
 .output {
@@ -68,4 +66,23 @@ h3 {
 
 .hidden {
   background: #1499c9;
+}
+
+@media only screen and (min-width:767px) {
+  * {
+    font-size: 28px;
+  }
+
+  body {
+    width: 700px;
+    margin: 20px auto;
+  }
+
+  h1 {
+    font-size: 60px;
+  }
+
+  h3 {
+    font-size: 40px;
+  }
 }
